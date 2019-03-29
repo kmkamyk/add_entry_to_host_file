@@ -16,3 +16,5 @@ else
     echo "wpis istnieje nic nie robie"
     exit 2
 fi
+
+# koniec
