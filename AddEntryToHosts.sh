@@ -7,7 +7,7 @@ host_entry="${ip_address}   ${host_name}"
 #   statusy bledow
 #   exit 2  -   wpis istnieje
 
-if [ `egrep -i $host_entry /etc/hosts |wc -l` -eq 0 ]
+if [ `grep -i $host_entry /etc/hosts |wc -l` -eq 0 ]
 then
     echo $host_entry
     echo "wpis nie istnieje, dodaje wpis"
