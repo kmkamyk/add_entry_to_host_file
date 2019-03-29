@@ -9,8 +9,10 @@ host_entry="${ip_address}   ${host_name}"
 
 if [ `egrep -i $host_entry /etc/hosts |wc -l` -eq 0 ]
 then
+    echo $host_entry
     echo "wpis nie istnieje, dodaje wpis"
 else
+    echo $host_entry
     echo "wpis istnieje nic nie robie"
     exit 2
 fi
