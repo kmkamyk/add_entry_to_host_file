@@ -2,7 +2,7 @@
 #Zmienne
 ip_address="192.168.1.100"
 host_name="lucy"
-host_entry="${ip_address} ${host_name}"
+host_entry="${ip_address}   ${host_name}"
 
 #   statusy bledow
 #   exit 2  -   wpis istnieje
