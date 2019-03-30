@@ -12,7 +12,7 @@ if [ `egrep -i "$ip_address|$host_name" /etc/hosts|wc -l` -eq 0 ]
 then
     echo $host_entry
     echo "wpis nie istnieje, dodaje wpis" >> log_file
-    sed "s/test.*/& \n $host_entry/" /etc/hosts
+    sed -i "s/test.*/&\n$host_entry/" /etc/hosts > /etc/hosts
 else
     echo $host_entry
     echo "wpis istnieje, koncze skrypt" >> log_file
