@@ -1,8 +1,8 @@
 #!/bin/bash
 #Zmienne
 log=/tmp/add_entry_to_hosts.log
-ip_address="192.168.1.100"
-host_name="lucy"
+ip_address="192.168.1.xxx"
+host_name="xxx"
 host_entry="${ip_address}\t${host_name}"
 
 #   statusy bledow
